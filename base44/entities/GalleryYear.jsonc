@@ -1,0 +1,73 @@
+{
+  "name": "GalleryYear",
+  "title": "Gallery Year",
+  "type": "object",
+  "properties": {
+    "year": {
+      "type": "number",
+      "title": "Year"
+    },
+    "title_en": {
+      "type": "string",
+      "title": "Title (English)"
+    },
+    "title_gu": {
+      "type": "string",
+      "title": "Title (Gujarati)"
+    },
+    "description_en": {
+      "type": "string",
+      "title": "Description (English)"
+    },
+    "description_gu": {
+      "type": "string",
+      "title": "Description (Gujarati)"
+    },
+    "cover_image": {
+      "type": "string",
+      "title": "Cover image"
+    },
+    "published": {
+      "type": "boolean",
+      "title": "Published",
+      "default": true
+    },
+    "display_order": {
+      "type": "number",
+      "title": "Display order",
+      "default": 0
+    }
+  },
+  "required": [
+    "year"
+  ],
+  "rls": {
+    "read": {
+      "$or": [
+        {
+          "data.published": true
+        },
+        {
+          "user_condition": {
+            "role": "admin"
+          }
+        }
+      ]
+    },
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

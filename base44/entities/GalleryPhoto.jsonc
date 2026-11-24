@@ -1,0 +1,69 @@
+{
+  "name": "GalleryPhoto",
+  "title": "Gallery Photo",
+  "type": "object",
+  "properties": {
+    "gallery_year_id": {
+      "type": "string",
+      "title": "Gallery year"
+    },
+    "image": {
+      "type": "string",
+      "title": "Image"
+    },
+    "caption_en": {
+      "type": "string",
+      "title": "Caption (English)"
+    },
+    "caption_gu": {
+      "type": "string",
+      "title": "Caption (Gujarati)"
+    },
+    "alt_text": {
+      "type": "string",
+      "title": "Alt text"
+    },
+    "display_order": {
+      "type": "number",
+      "title": "Display order",
+      "default": 0
+    },
+    "published": {
+      "type": "boolean",
+      "title": "Published",
+      "default": true
+    }
+  },
+  "required": [
+    "gallery_year_id"
+  ],
+  "rls": {
+    "read": {
+      "$or": [
+        {
+          "data.published": true
+        },
+        {
+          "user_condition": {
+            "role": "admin"
+          }
+        }
+      ]
+    },
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

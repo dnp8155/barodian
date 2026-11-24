@@ -1,0 +1,69 @@
+{
+  "name": "SiteSettings",
+  "title": "Website Settings",
+  "type": "object",
+  "properties": {
+    "site_name": {
+      "type": "string",
+      "title": "Website name"
+    },
+    "logo": {
+      "type": "string",
+      "title": "Logo"
+    },
+    "favicon": {
+      "type": "string",
+      "title": "Favicon"
+    },
+    "contact_phone": {
+      "type": "string",
+      "title": "Contact phone"
+    },
+    "contact_email": {
+      "type": "string",
+      "title": "Contact email"
+    },
+    "whatsapp_number": {
+      "type": "string",
+      "title": "WhatsApp number"
+    },
+    "address": {
+      "type": "string",
+      "title": "Address"
+    },
+    "instagram": {
+      "type": "string",
+      "title": "Instagram URL"
+    },
+    "facebook": {
+      "type": "string",
+      "title": "Facebook URL"
+    },
+    "youtube": {
+      "type": "string",
+      "title": "YouTube URL"
+    },
+    "footer_description": {
+      "type": "string",
+      "title": "Footer description"
+    }
+  },
+  "rls": {
+    "read": {},
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

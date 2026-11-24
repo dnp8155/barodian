@@ -1,0 +1,100 @@
+{
+  "name": "Murtikar",
+  "title": "Murtikar",
+  "type": "object",
+  "properties": {
+    "name_en": {
+      "type": "string",
+      "title": "Name (English)"
+    },
+    "name_gu": {
+      "type": "string",
+      "title": "Name (Gujarati)"
+    },
+    "description_en": {
+      "type": "string",
+      "title": "Description (English)"
+    },
+    "description_gu": {
+      "type": "string",
+      "title": "Description (Gujarati)"
+    },
+    "profile_image": {
+      "type": "string",
+      "title": "Profile image"
+    },
+    "gallery_images": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "title": "Gallery images"
+    },
+    "phone": {
+      "type": "string",
+      "title": "Phone"
+    },
+    "whatsapp_number": {
+      "type": "string",
+      "title": "WhatsApp number"
+    },
+    "address_en": {
+      "type": "string",
+      "title": "Address (English)"
+    },
+    "address_gu": {
+      "type": "string",
+      "title": "Address (Gujarati)"
+    },
+    "city": {
+      "type": "string",
+      "title": "City"
+    },
+    "website": {
+      "type": "string",
+      "title": "Website"
+    },
+    "is_featured": {
+      "type": "boolean",
+      "title": "Featured",
+      "default": false
+    },
+    "is_published": {
+      "type": "boolean",
+      "title": "Published",
+      "default": false
+    }
+  },
+  "required": [
+    "name_en"
+  ],
+  "rls": {
+    "read": {
+      "$or": [
+        {
+          "data.is_published": true
+        },
+        {
+          "user_condition": {
+            "role": "admin"
+          }
+        }
+      ]
+    },
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

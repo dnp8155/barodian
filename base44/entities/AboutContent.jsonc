@@ -1,0 +1,113 @@
+{
+  "name": "AboutContent",
+  "title": "About Page Content",
+  "type": "object",
+  "properties": {
+    "hero_image": {
+      "type": "string",
+      "title": "Hero image"
+    },
+    "secondary_image": {
+      "type": "string",
+      "title": "Secondary image"
+    },
+    "who_title_en": {
+      "type": "string",
+      "title": "Who We Are heading (English)"
+    },
+    "who_title_gu": {
+      "type": "string",
+      "title": "Who We Are heading (Gujarati)"
+    },
+    "who_body_en": {
+      "type": "string",
+      "title": "Who We Are text (English)"
+    },
+    "who_body_gu": {
+      "type": "string",
+      "title": "Who We Are text (Gujarati)"
+    },
+    "story_title_en": {
+      "type": "string",
+      "title": "Our Story heading (English)"
+    },
+    "story_title_gu": {
+      "type": "string",
+      "title": "Our Story heading (Gujarati)"
+    },
+    "story_body_en": {
+      "type": "string",
+      "title": "Our Story text (English)"
+    },
+    "story_body_gu": {
+      "type": "string",
+      "title": "Our Story text (Gujarati)"
+    },
+    "vision_title_en": {
+      "type": "string",
+      "title": "Our Vision heading (English)"
+    },
+    "vision_title_gu": {
+      "type": "string",
+      "title": "Our Vision heading (Gujarati)"
+    },
+    "vision_body_en": {
+      "type": "string",
+      "title": "Our Vision text (English)"
+    },
+    "vision_body_gu": {
+      "type": "string",
+      "title": "Our Vision text (Gujarati)"
+    },
+    "connection_title_en": {
+      "type": "string",
+      "title": "Cultural Connection heading (English)"
+    },
+    "connection_title_gu": {
+      "type": "string",
+      "title": "Cultural Connection heading (Gujarati)"
+    },
+    "connection_body_en": {
+      "type": "string",
+      "title": "Cultural Connection text (English)"
+    },
+    "connection_body_gu": {
+      "type": "string",
+      "title": "Cultural Connection text (Gujarati)"
+    },
+    "why_title_en": {
+      "type": "string",
+      "title": "Why Barodian Exists heading (English)"
+    },
+    "why_title_gu": {
+      "type": "string",
+      "title": "Why Barodian Exists heading (Gujarati)"
+    },
+    "why_body_en": {
+      "type": "string",
+      "title": "Why Barodian Exists text (English)"
+    },
+    "why_body_gu": {
+      "type": "string",
+      "title": "Why Barodian Exists text (Gujarati)"
+    }
+  },
+  "rls": {
+    "read": {},
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}

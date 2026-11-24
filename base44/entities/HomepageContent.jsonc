@@ -1,0 +1,177 @@
+{
+  "name": "HomepageContent",
+  "title": "Homepage Content",
+  "type": "object",
+  "properties": {
+    "hero_eyebrow_en": {
+      "type": "string",
+      "title": "Hero eyebrow (English)"
+    },
+    "hero_eyebrow_gu": {
+      "type": "string",
+      "title": "Hero eyebrow (Gujarati)"
+    },
+    "hero_title_en": {
+      "type": "string",
+      "title": "Hero heading (English)"
+    },
+    "hero_title_gu": {
+      "type": "string",
+      "title": "Hero heading (Gujarati)"
+    },
+    "hero_description_en": {
+      "type": "string",
+      "title": "Hero description (English)"
+    },
+    "hero_description_gu": {
+      "type": "string",
+      "title": "Hero description (Gujarati)"
+    },
+    "hero_cta_primary_en": {
+      "type": "string",
+      "title": "Primary CTA (English)"
+    },
+    "hero_cta_primary_gu": {
+      "type": "string",
+      "title": "Primary CTA (Gujarati)"
+    },
+    "hero_cta_secondary_en": {
+      "type": "string",
+      "title": "Secondary CTA (English)"
+    },
+    "hero_cta_secondary_gu": {
+      "type": "string",
+      "title": "Secondary CTA (Gujarati)"
+    },
+    "hero_image": {
+      "type": "string",
+      "title": "Hero photograph"
+    },
+    "intro_title_en": {
+      "type": "string",
+      "title": "Introduction heading (English)"
+    },
+    "intro_title_gu": {
+      "type": "string",
+      "title": "Introduction heading (Gujarati)"
+    },
+    "intro_body_en": {
+      "type": "string",
+      "title": "Introduction text (English)"
+    },
+    "intro_body_gu": {
+      "type": "string",
+      "title": "Introduction text (Gujarati)"
+    },
+    "intro_body_two_en": {
+      "type": "string",
+      "title": "Introduction second paragraph (English)"
+    },
+    "intro_body_two_gu": {
+      "type": "string",
+      "title": "Introduction second paragraph (Gujarati)"
+    },
+    "archive_title_en": {
+      "type": "string",
+      "title": "Archive heading (English)"
+    },
+    "archive_title_gu": {
+      "type": "string",
+      "title": "Archive heading (Gujarati)"
+    },
+    "archive_description_en": {
+      "type": "string",
+      "title": "Archive description (English)"
+    },
+    "archive_description_gu": {
+      "type": "string",
+      "title": "Archive description (Gujarati)"
+    },
+    "editorial_title_en": {
+      "type": "string",
+      "title": "Editorial heading (English)"
+    },
+    "editorial_title_gu": {
+      "type": "string",
+      "title": "Editorial heading (Gujarati)"
+    },
+    "editorial_body_en": {
+      "type": "string",
+      "title": "Editorial text (English)"
+    },
+    "editorial_body_gu": {
+      "type": "string",
+      "title": "Editorial text (Gujarati)"
+    },
+    "final_title_en": {
+      "type": "string",
+      "title": "Closing heading (English)"
+    },
+    "final_title_gu": {
+      "type": "string",
+      "title": "Closing heading (Gujarati)"
+    },
+    "final_description_en": {
+      "type": "string",
+      "title": "Closing description (English)"
+    },
+    "final_description_gu": {
+      "type": "string",
+      "title": "Closing description (Gujarati)"
+    },
+    "final_cta_en": {
+      "type": "string",
+      "title": "Closing CTA (English)"
+    },
+    "final_cta_gu": {
+      "type": "string",
+      "title": "Closing CTA (Gujarati)"
+    },
+    "featured_year_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "title": "Featured gallery years"
+    },
+    "featured_murtikar_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "title": "Featured Murtikars"
+    },
+    "featured_dhol_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "title": "Featured Dhol-Tasha groups"
+    },
+    "featured_dj_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "title": "Featured DJ providers"
+    }
+  },
+  "rls": {
+    "read": {},
+    "create": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "update": {
+      "user_condition": {
+        "role": "admin"
+      }
+    },
+    "delete": {
+      "user_condition": {
+        "role": "admin"
+      }
+    }
+  }
+}
